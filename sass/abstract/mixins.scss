@@ -1,0 +1,12 @@
+
+@mixin applyFlexRows($justifyContent) {
+    display: flex;
+    justify-content: $justifyContent;
+    align-items: center;
+}
+@mixin applyFlexColums($justifyContent) {
+    display: flex;
+    flex-direction: column;
+    justify-content: $justifyContent;
+    align-items: center;
+}
