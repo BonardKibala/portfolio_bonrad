@@ -1,5 +1,6 @@
 {
     "scripts": {
-        "start-sass":"sass sass/style.scss css/style.css --watch"
+        "start-sass":"sass sass/style.scss css/style.css --watch",
+        "start-data": "json-server databases/database.json --watch"
     }
 }

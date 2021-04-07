@@ -1,13 +1,12 @@
+
+@import "./base/reset";
 @import "./abstract/variables";
 @import "./abstract/mixins";
+@import "./pages/portfolio";
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-}
 .mainContainer{
     &--color{
-     background-color: $white-color;
+     @include applyBgWhite();
 }
     
 }
@@ -69,31 +68,37 @@
             }
         }
       }
+.homePage{
+  @include applyFlexRows(space-evenly);
+  height: 100vh;
+  text-align: $align_center;
+}
 
 .portrait{
 text-align: $align_center;
 margin: 0 auto;
 word-wrap: break-word;
+padding: 3rem;
+width: 40%;
+@include width-heigth(40%,100%);
 &__slide{
-    @include applyFlexRows(space-around);
+  margin-top: -2rem;
     height: 100%;
     width: 100%;
+    box-shadow: 10px 5px 5px rgb(216, 185, 185), 1em 0 .4em rgb(156, 156, 150);
 }
 &__image{
+  margin:0 auto;
 background: url("/images/bnrd.png");
 background-size: cover;
-width: 40%;
-height: 65vh;
+height: 90%;
+width: 90%;
 border-radius: 10px;
 position: relative;
 -webkit-animation: portraitImage-animated 5s infinite;
 -webkit-animation-delay: 1.5s;
 animation: portraitImage-animated 5s infinite;
 animation-delay: 1.5s;
-}
-&__image:hover{
-cursor: pointer;
-transform: scale(1) rotate(5deg);
 }
 // @-webkit-keyframes portraitImage-animated {
 //     100% {
@@ -156,9 +161,8 @@ transform: scale(1) rotate(5deg);
     font-size: 1.2rem;
 }
 }
-.segment{
-    background-color: transparent !important;
-    border: none !important;
+.portrait:nth-child(1){
+  width: 50%;
 }
 .footer{
     background-color:$color_11Oe1f;
@@ -168,7 +172,7 @@ transform: scale(1) rotate(5deg);
     justify-content: space-around;
     align-items: $align_center;
     font-size: 16px;
-
+    @include width-heigth(100vw,auto);
 &__details{
     color: $white-color;
     display: flex;
@@ -224,10 +228,8 @@ transform: scale(1) rotate(5deg);
         // -- menu emburger essaie
           
           .topnav {
-            overflow: hidden;
-            background-color: $color_11Oe1f;
-            display: flex;
-            justify-content: $align_center;
+            @include bgColor($color_11Oe1f);
+            @include applyFlexRows($align_center);
           }
           
           .topnav a {
@@ -285,178 +287,9 @@ transform: scale(1) rotate(5deg);
 
 
           //---portfolio page-------
-     .portfolio{
-        &--align{
-            top: 0;
-            text-align: $align_center;
-        }
-        &__image{
-            width: 100%;
-            .image{
-              display: inline-block;
-                width: 10%;
-                animation: move 6s infinite;
-            }
-            .image1{
-                width: 2%;
-                height: 5%;
-                position: sticky;
-                float: right;
-            }
-            @keyframes move {
-                0% {
-                  position: relative;
-                  left: 0;
-                }
-                5% {
-                    position: relative;
-                    left: 5%;
-                  }
-                10% {
-                  position: relative;
-                  left: 10%;
-                }
-                15% {
-                    position: relative;
-                    left: 15%;
-                  }
-                20% {
-                  position: relative;
-                  left: 20%;
-                }
-                25% {
-                    position: relative;
-                    left: 25%;
-                  }
-                30% {
-                  position: relative;
-                  left: 30%;
-                }
-                35% {
-                    position: relative;
-                    left: 35%;
-                  }
-                40% {
-                  position: relative;
-                  left: 40%;
-                }
-                45% {
-                    position: relative;
-                    left: 45%;
-                  }
-                50% {
-                  position: relative;
-                  left: 50%;
-                }
-                55% {
-                    position: relative;
-                    left: 55%;
-                  }
-                60% {
-                  position: relative;
-                  left: 60%;
-                }
-                65% {
-                    position: relative;
-                    left: 65%;
-                  }
-                70% {
-                  position: relative;
-                  left: 70%;
-                }
-                75% {
-                    position: relative;
-                    left: 75%;
-                  }
-                  80% {
-                    position: relative;
-                    left: 80%;
-                  }
-                  85% {
-                    position: relative;
-                    left: 85%;
-                  }
-                  90% {
-                    position: relative;
-                    left: 90%;
-                  }
-                  95% {
-                    position: relative;
-                    left: 95%;
-                  }
-                100% {
-                  position: relative;
-                  left: 100%;
-                }
-              }
-        }
-     }     
-     .Skills{
-        display: flex;
-        flex-direction: row;
-        justify-content: $align_center;
-        .hardSkills{
-            margin: 3rem;
-            &__title{
-                font-size: 2.25rem;
-            }
-            &__titleContent{
-                background-color: $color_11Oe1f;
-                color: white;
-                text-align: $align_center;
-            }
-            &__contentContainer{
-                display: flex !important;
-                flex-direction: column;
-                justify-content: space-around;
-                
-                background-color: #f2eff3 !important;
-            }
-            &__content{
-                display: flex !important;
-                flex-direction: row;
-                justify-content: $align_center;
-                text-align: justify;
-                .icon{
-                    font-size: 2.8rem;
-                    margin: 2rem;
-                }
-            }
-            &__icon{
-                text-align: $align_center;
-            }
-            &__name{
-                font-size: 1.25rem;
-                margin-top: -2rem;
-            }
-        }
-        .softSkills{
-            margin: 3rem;
-            &__titleContent{
-                background-color: $color_11Oe1f;
-                color: white;
-                text-align: $align_center;
-            }
-            &__title{
-                font-size: 2.25rem;
-            }
-            &__contentContainer{
-                display: flex !important;
-                flex-direction: column;
-                justify-content: space-around;
-                background-color: #f2eff3 !important;
-            }
-            &__content{
-                background-color: #e1dce1;
-                margin: 1.25rem;
-                border-radius: 10px;
-                 .contentItems{
-                text-align: justify;
-                margin: 1rem;
-                 }
-            }
-        }
-     }
+      .portfolio{
+     @include portfolio();
+          }
 
 
 

@@ -1,0 +1,67 @@
+{
+    "developper": [
+        {
+            "firstname": "Bonard",
+            "lastname": "KIBALA",
+            "middlename": "Ink",
+            "work1": "FullStack Developper",
+            "work2": "Freelance",
+            "work3": "Designer",
+            "work4": "Software engeener",
+            "description": "I'm based in the democratic republic of the congo , Precisely in Kinshasa. do you have personal or corporate projects to digitize? I am at your disposal for any realization"
+        }
+    ],
+    "works": [
+        "UX Design and UI Design",
+        "Web site Developpement",
+        "web app Developpement",
+        "Web mobile app Developpement",
+        "Desktop and Mobile app Developpement",
+        "Database administration"
+    ],
+    "address": [
+        {
+            "address1": "Kinshasa",
+            "address2": "Republic Democratic of Congo",
+            "whatsapp": "+243819097177",
+            "facebook": "Bonard Kibala"
+        }
+    ],
+    "hardSkills": [
+        "HTML",
+        "CSS",
+        "PHP",
+        "Laravel",
+        "NodeJs",
+        "Javascript",
+        "Mysql",
+        "MongoDB",
+        "Java",
+        "Semantic Ui",
+        "C",
+        "Flutter"
+    ],
+    "softSkills": [
+        "team work",
+        "adaptability",
+        "time management",
+        "Human resource management"
+    ],
+    "projects": [
+        {
+            "title": "Kinshasa digital",
+            "image": "/images/kd.png",
+            "description": "This project is to redo the kinshasa digital academy website"
+        },
+        {
+            "title": "Online Bookstore",
+            "image": "/images/onlbook.png",
+            "description": "This project consists of the creation of an online bookstore for the sale of books"
+        },
+        {
+            "title": "Contact Directory app",
+            "image": "/images/rep.png",
+            "description": "This form manages the presence of staff in a local company"
+        }
+    ]
+}

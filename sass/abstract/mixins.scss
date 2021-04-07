@@ -1,12 +1,23 @@
 
 @mixin applyFlexRows($justifyContent) {
-    display: flex;
+    display: flex !important;
+    flex-direction: row;
     justify-content: $justifyContent;
     align-items: center;
 }
 @mixin applyFlexColums($justifyContent) {
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     justify-content: $justifyContent;
     align-items: center;
+}
+@mixin applyBgWhite(){
+    background-color: $white-color;
+}
+@mixin bgColor($bgcolor){
+    background-color: $bgcolor !important;
+}
+@mixin  width-heigth($width,$height) {
+    width: $width;
+    height: $height;
 }
