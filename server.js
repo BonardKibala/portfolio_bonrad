@@ -22,8 +22,8 @@ window.addEventListener('load', () => {
                         `${me.work3}`,
                         `${me.work4}`
                     ],
-                    typeSpeed: 50,
-                    backspedd: 50,
+                    typeSpeed: 150,
+                    backspedd: 150,
                     loop: true
                 });
 

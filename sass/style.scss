@@ -161,6 +161,7 @@ animation-delay: 1.5s;
     color: $white-color;
     text-align: $align_center;
     padding: 2rem;
+    font-style: italic;
     @include fontFamily($montserrat,700);
     font-size: 2.75rem;
   }
