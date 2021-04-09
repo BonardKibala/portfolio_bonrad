@@ -15,56 +15,36 @@
 </head>
 
 <body>
+    <header class="normalHeader">
+        <nav>
+            <div class="menu">
 
-    <div class="mainContainer mainContainer--color">
-        <header>
-            <nav>
-                <div class="ui menu topnav" id="myTopnav">
-
-                    <a href="index.html" class="active"> <i class="fa fa-home"></i> &nbsp;Home</a>
-                    <a href="/views/portfolio.html"><i class="fa fa-user"></i> &nbsp;Portfolio</a>
-                    <a href="#"><i class="fa fa-photo"></i> &nbsp;Galery</a>
-                    <a href="#"><i class="fa fa-address-card"></i> &nbsp;About</a>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                </div>
-            </nav>
-        </header>
-        <!-- <nav>
-            <div class="header">
-                
-                    <div class="logo">
-                        <img src="./images/logo.jpg" alt="" class="logo__image logo--animated">
-                    </div>
-                <div class="ui stackable container inverted primary menu" id="sidebar">
-                    <a class="active item">
-                        Accueil
-                    </a>
-                    <a class="item">
-                        Portfolio
-                    </a>
-                    <a class="item">
-                        Galerie
-                    </a>
-                    <a class="item">
-                        Curriculum Vitae
-                    </a>
-                    <a class="item">
-                        A propos de moi
-                    </a>
-
-                </div>
-
+                <a href="index.html" class="active item"> <i class="fa fa-home"></i> &nbsp;Home</a>
+                <a href="/views/portfolio.html" class="item"><i class="fa fa-user"></i> &nbsp;Portfolio</a>
+                <a href="#" class="item"><i class="fa fa-photo"></i> &nbsp;Galery</a>
+                <a href="#" class="item"><i class="fa fa-address-card"></i> &nbsp;About</a>
+ 
             </div>
-        </nav> <br> -->
+        </nav>
+    </header>
+    <header class="responsiveHeader">
+        <nav>
+            <div class="menu">
+                <a href="index.html" class="active item"><i class="fa fa-home"></i> &nbsp;</a>
+                <a href="/views/portfolio.html" class="item"><i class="fa fa-user"></i> &nbsp;</a>
+                <a href="" class="item"><i class="fa fa-photo"></i> &nbsp;</a>
+                <a href="" class="item"><i class="fa fa-address-card"></i> &nbsp;</a>
+            </div>
+        </nav>
+    </header>
+    <div class="mainContainer mainContainer--color">
         <div class="homePage">
-            <div class="portrait">
+            <div class="portrait ui sixteen">
                 <div class="portrait__details">
                     <h1 class="portrait__title">
                         <!-- my name -->
                     </h1>
-                    <h3 class="portrait__name center">I'm <span class="name--animated"></span></h3>
+                    <h3 class="portrait__job center">I'm <span class="job--animated"></span></h3>
                     <p class="portrait__description"><i class="cd flag"></i></p>
 
                     <div class="buttons">
@@ -96,7 +76,7 @@
                     <br>
                     <div class="ui  message big content">
                         <i class="ui check circle outline big icon"></i>
-                        Thank you very much.
+                        Your humble servant.
                     </div>
 
                 </div>
@@ -105,9 +85,8 @@
 
             <div class="portrait">
                 <div class="portrait__slide">
-                    <div alt="Mon portrait" class="portrait__image">
-
-                    </div>
+                    <img src="./images/bnrd.png" alt="Bonard Kibala image" class="portrait__image">
+                </img>
                 </div>
             </div>
         </div>
@@ -135,16 +114,6 @@
 
     </footer>
 
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
     <script src="server.js"></script>

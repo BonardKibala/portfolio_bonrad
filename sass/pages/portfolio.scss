@@ -1,8 +1,10 @@
+
 @mixin portfolio() {
         &__title--align{
             text-align: $align_center;
             font-size: 2.75rem;
-            padding-top: 2rem;
+            @include fontFamily($montserrat,900);
+            padding-top: 6rem;
         }
         &__imageMove{
             .imageMove{
@@ -102,102 +104,115 @@
                 }
             }
         }
-     }     
-     .Skills{
-       @include applyFlexRows(space-evenly);
-       height: 100vh;
-        .hardSkills{
-          height: 80%;
-            &__title{
-                font-size: 2.75rem;
-            }
-            &__titleContent{
+        .Skills{
+          @include applyFlexRows(space-evenly);
+          height: 100vh;
+           .hardSkills{
+             width: 40%;
+             height: 80%;
+               &__title{
+                   font-size: 2.25rem;
+                   @include fontFamily($montserrat,700);
+               }
+               &__titleContent{
+                   @include bgColor($color_11Oe1f);
+                   color: $white-color;
+                   text-align: $align_center;
+               }
+               &__contentContainer{
+                   @include applyFlexColums(space-around);
+                   @include bgColor(#f2eff3);
+                   box-shadow: 10px 5px 5px 5px rgb(216, 185, 185), 1em 0 .4em rgb(156, 156, 150);
+   
+               }
+               &__content{
+                  @include applyFlexRows($align_center);
+                   text-align: justify;
+                   .icon{
+                       font-size: 3em;
+                       margin: 2rem;
+                   }
+               }
+               &__icon{
+                   text-align: $align_center;
+                   @include fontFamily($roboto,300);
+               }
+               &__name{
+                   font-size: 1.25em;
+                   margin-top: -2rem;
+               }
+           }
+           .softSkills{
+            width: 40%;
+             height: 80%;
+               &__titleContent{
+                   background-color: $color_11Oe1f;
+                   color: $white-color;
+                   text-align: $align_center;
+               }
+               &__title{
+                   font-size: 2.25rem;
+                   @include fontFamily($montserrat,700);
+               }
+               &__contentContainer{
+                   @include applyFlexColums(space-around);
+                   @include bgColor(#f2eff3);
+               }
+               &__content{
+                  @include bgColor(#e1dce1);
+                   margin: 1.25rem;
+                   border-radius: 10px;
+                    .contentItems{
+                   @include fontFamily($roboto,400);
+                   line-height: 2.5em;
+                   font-size: 1.15em;
+                   text-align: justify;
+                   margin: 1rem;
+                    }
+               }
+           }
+        }
+        .projects{
+         @include bgColor(#f2eff3);
+         @include width-heigth(100vw,100vh);
+         
+          &__titleContent{
+           text-align: $align_center;
+          
+          }
+          &__title{
+           @include fontFamily($roboto,900);
+            font-size: 2.75rem;
+          }
+          &__Content{
+            @include applyFlexRows(space-evenly);
+            .project{
+              @include width-heigth(28%,100%);
+              background-color:$color_11Oe1f;
+              &__imageContent{
+               text-align: $align_center;
+              }
+              &__image{
+               @include width-heigth(100%,auto);
+              }
+              &__title{
+               @include fontFamily($montserrat,700);
                 @include bgColor($color_11Oe1f);
+                text-align: $align_center;
                 color: $white-color;
+              }
+              &__description{
+               @include fontFamily($roboto,350);
+                @include applyBgWhite();
                 text-align: $align_center;
+                padding-top: .9rem;
+                padding-bottom: 1.75rem;
+              }
             }
-            &__contentContainer{
-                @include applyFlexColums(space-around);
-                @include bgColor(#f2eff3);
-                box-shadow: 10px 5px 5px 5px rgb(216, 185, 185), 1em 0 .4em rgb(156, 156, 150);
-
-            }
-            &__content{
-               @include applyFlexRows($align_center);
-                text-align: justify;
-                .icon{
-                    font-size: 2.8rem;
-                    margin: 2rem;
-                }
-            }
-            &__icon{
-                text-align: $align_center;
-                @include bgColor(#e1dce1);
-                border-radius: 20px;
-            }
-            &__name{
-                font-size: 1.25rem;
-                margin-top: -2rem;
-            }
-        }
-        .softSkills{
-          height: 80%;
-            &__titleContent{
-                background-color: $color_11Oe1f;
-                color: $white-color;
-                text-align: $align_center;
-            }
-            &__title{
-                font-size: 2.25rem;
-            }
-            &__contentContainer{
-                @include applyFlexColums(space-around);
-                @include bgColor(#f2eff3);
-            }
-            &__content{
-               @include bgColor(#e1dce1);
-                margin: 1.25rem;
-                border-radius: 10px;
-                 .contentItems{
-                text-align: justify;
-                margin: 1rem;
-                 }
-            }
-        }
+          
+       }
+   }
+   
      }
-     .projects{
-      @include bgColor(#f2eff3);
-      @include width-heigth(100vw,100vh);
-      
-       &__titleContent{
-        text-align: $align_center;
-        @include width-heigth(100vw,auto);
-       }
-       &__title{
-         font-size: 2.75rem;
-       }
-       &__Content{
-         @include applyFlexRows(space-evenly);
-         .project{
-           @include width-heigth(28%,100%);
-           background-color:$color_11Oe1f;
-           &__imageContent{
-            text-align: $align_center;
-           }
-           &__image{
-            @include width-heigth(100%,auto)
-           }
-           &__title{
-             @include bgColor($color_11Oe1f);
-             text-align: $align_center;
-             color: $white-color;
-           }
-           &__description{
-             @include applyBgWhite();
-             text-align: $align_center;
-             padding-bottom: 1.75rem;
-           }
-         }
-       
-    }
-}
+     
+     

@@ -1,6 +1,6 @@
 
 @mixin applyFlexRows($justifyContent) {
-    display: flex !important;
+    display: flex;
     flex-direction: row;
     justify-content: $justifyContent;
     align-items: center;
@@ -15,9 +15,15 @@
     background-color: $white-color;
 }
 @mixin bgColor($bgcolor){
-    background-color: $bgcolor !important;
+    background: $bgcolor !important;
+    background-size: cover;
+    background-position: fixed;
 }
 @mixin  width-heigth($width,$height) {
     width: $width;
     height: $height;
+}
+@mixin fontFamily($font,$weight){
+    font-family:$font;
+    font-weight: $weight;
 }

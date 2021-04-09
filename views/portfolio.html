@@ -6,27 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bonard Kibala</title>
-    <link rel="stylesheet" href="/css/style.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
         integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
         crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
     <div class="mainContainer mainContainer--color">
-        <header>
+        <header class="normalHeader">
             <nav>
-                <div class="ui menu topnav" id="myTopnav">
+                <div class="menu">
 
-                    <a href="/index.html"> <i class="fa fa-home"></i> &nbsp;Home</a>
-                    <a href="/views/portfolio.html" class="active"><i class="fa fa-user"></i> &nbsp;Portfolio</a>
-                    <a href="#"><i class="fa fa-photo"></i> &nbsp;Galery</a>
-                    <a href="#"><i class="fa fa-address-card"></i> &nbsp;About</a>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a>
+                    <a href="/index.html" class=" item"> <i class="fa fa-home"></i> &nbsp;Home</a>
+                    <a href="./portfolio.html" class="active item"><i class="fa fa-user"></i> &nbsp;Portfolio</a>
+                    <a href="#" class="item"><i class="fa fa-photo"></i> &nbsp;Galery</a>
+                    <a href="#" class="item"><i class="fa fa-address-card"></i> &nbsp;About</a>
+
+                </div>
+            </nav>
+        </header>
+        <header class="responsiveHeader">
+            <nav>
+                <div class="menu">
+                    <a href="/index.html" class="item"><i class="fa fa-home"></i> &nbsp;</a>
+                    <a href="./portfolio.html" class="active item"><i class="fa fa-user"></i> &nbsp;</a>
+                    <a href="" class="item"><i class="fa fa-photo"></i> &nbsp;</a>
+                    <a href="" class="item"><i class="fa fa-address-card"></i> &nbsp;</a>
                 </div>
             </nav>
         </header>
@@ -41,47 +50,47 @@
         </div>  this is an animation-->
         <div class="portfolio">
             <h1 class="portfolio__title portfolio__title--align">My Skills</h1>
-        
-        <div class="Skills">
-              <div class="hardSkills">
-                <div class="ui one column grid">
-                    <div class="hardSkills__titleContent ui column">
+
+            <div class="Skills">
+                <div class="hardSkills">
+
+                    <div class="hardSkills__titleContent">
                         <h2 class="hardSkills__title">
                             HardSkills
                         </h2>
                     </div>
-                    <div class="hardSkills__contentContainer ui column">
+                    <div class="hardSkills__contentContainer">
                         <div class="hardSkills__content">
                             <div class="hardSkills__icon">
-                                <i class="ui html5 red icon"></i>
+                                <i class="ui html5 red big icon"></i>
                                 <p class="hardSkills__name">
                                     <!-- html in json file -->
                                 </p>
                             </div>
                             <div class="hardSkills__icon">
-                                <i class="ui css3 blue icon"></i>
+                                <i class="ui css3 blue big icon"></i>
                                 <p class="hardSkills__name"></p>
                             </div>
                             <div class="hardSkills__icon">
-                                <i class="ui php red icon"></i>
+                                <i class="ui php red big icon"></i>
                                 <p class="hardSkills__name"></p>
                             </div>
                             <div class="hardSkills__icon">
-                                <i class="ui laravel green icon"></i>
+                                <i class="ui laravel green big icon"></i>
                                 <p class="hardSkills__name"></p>
                             </div>
                         </div>
                         <div class="hardSkills__content">
                             <div class="hardSkills__icon">
-                                <i class="ui node blue icon"></i>
+                                <i class="ui node blue big icon"></i>
                                 <p class="hardSkills__name"></p>
                             </div>
                             <div class="hardSkills__icon">
-                                <i class="ui js yellow icon"></i>
+                                <i class="ui js yellow big icon"></i>
                                 <p class="hardSkills__name"></p>
                             </div>
                             <div class="hardSkills__icon">
-                                <svg class="icon" xmlns="http://www.w3.org/2000/svg"
+                                <svg class="big icon" xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
                                     width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"
                                     data-icon="grommet-icons:mysql" data-inline="false" class="iconify"
@@ -93,7 +102,7 @@
                                 <p class="hardSkills__name"></p>
                             </div>
                             <div class="hardSkills__icon">
-                                <svg class="icon" xmlns="http://www.w3.org/2000/svg"
+                                <svg class="big icon" xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
                                     width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"
                                     data-icon="cib:mongodb" data-inline="false" class="iconify"
@@ -107,11 +116,11 @@
                         </div>
                         <div class="hardSkills__content">
                             <div class="hardSkills__icon">
-                                <span class="iconify icon" data-icon="logos:java" data-inline="false"></span>
+                                <span class="iconify big icon" data-icon="logos:java" data-inline="false"></span>
                                 <p class="hardSkills__name"></p>
                             </div>
                             <div class="hardSkills__icon">
-                                <span class="iconify icon" data-icon="logos:semantic-ui" data-inline="false"></span>
+                                <span class="iconify big icon" data-icon="logos:semantic-ui" data-inline="false"></span>
                                 <p class="hardSkills__name"></p>
                             </div>
                             <div class="hardSkills__icon">
@@ -119,15 +128,15 @@
                                 <p class="hardSkills__name">C</p>
                             </div>
                             <div class="hardSkills__icon">
-                                <span class="iconify icon" data-icon="logos:flutter" data-inline="false"></span>
+                                <span class="iconify big icon" data-icon="logos:flutter" data-inline="false"></span>
                                 <p class="hardSkills__name"></p>
                             </div>
                         </div>
                     </div>
+
                 </div>
-            </div>
-            <div class="softSkills">
-                <div class="ui one column grid">
+                <div class="softSkills">
+
                     <div class="softSkills__titleContent ui column">
                         <h2 class="softSkills__title">
                             SoftSkills
@@ -140,59 +149,90 @@
                             </ol>
                         </div>
                     </div>
+
                 </div>
+            </div>
+            <div class="projects">
+                <div class="ui one column grid">
+                    <div class="projects__titleContent ui column">
+                        <h2 class="projects__title">
+                            Projects
+                        </h2>
+                    </div>
+                </div>
+                <div class="projects__Content">
+                    <div class="project">
+                        <div class="project__title">
+
+                        </div>
+                        <div class="project__imageContent">
+                            <img src="" alt="" class="project__image">
+                        </div>
+                        <div class="project__description">
+
+                            <a href="#" class="ui red circular button">View project</a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project__title">
+
+                        </div>
+                        <div class="project__imageContent">
+                            <img src="" alt="" class="project__image">
+                        </div>
+                        <div class="project__description">
+
+                            <a href="#" class="ui black circular button">View project</a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project__title">
+
+                        </div>
+                        <div class="project__imageContent">
+                            <img src="" alt="" class="project__image">
+                        </div>
+                        <div class="project__description">
+
+                            <a href="#" class="ui blue circular button">View project</a>
+                        </div>
+                    </div>
+
+                </div><br><br>
             </div>
         </div>
-        <div class="projects">
-            <div class="ui one column grid">
-                <div class="projects__titleContent ui column">
-                    <h2 class="projects__title">
-                        Projects
-                    </h2>
+
+        <div class="writeMe">
+            <h2 class="writeMe__title">
+                Write me
+            </h2>
+            <form action="">
+                <div class="ui inverted form ">
+                    <div class="writeMe__form">
+                        <div class="field">
+                            <label for="lastName" class="label">FirstName</label>
+                            <input type="text" name="lastName" id="lastName">
+                        </div>
+                        <div class="field">
+                            <label for="email" class="label">E-mail</label>
+                            <input type="text" name="email" id="email">
+                        </div>
+                        <div class="field">
+                            <label for="message" class="message">Message</label>
+                            <textarea name="message" id="message"></textarea>
+                        </div>
+                        <div class="buttons">
+                            <button type="button" class="ui primary button">
+                                <i class="icon send"></i>
+                                Send
+                            </button>
+                        </div>
+                    </div>
+
                 </div>
-            </div>
-            <div class="projects__Content">
-                <div class="project">
-                    <div class="project__title">
-
-                    </div>
-                    <div class="project__imageContent">
-                        <img src="" alt="" class="project__image">
-                    </div>
-                    <div class="project__description">
-
-                        <a href="#" class="ui red circular button">View project</a>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="project__title">
-
-                    </div>
-                    <div class="project__imageContent">
-                        <img src="" alt="" class="project__image">
-                    </div>
-                    <div class="project__description">
-
-                        <a href="#" class="ui black circular button">View project</a>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="project__title">
-
-                    </div>
-                    <div class="project__imageContent">
-                        <img src="" alt="" class="project__image">
-                    </div>
-                    <div class="project__description">
-
-                        <a href="#" class="ui blue circular button">View project</a>
-                    </div>
-                </div>
-
-            </div><br><br>
+            </form>
         </div>
     </div>
-</div>
 
     <footer class="footer">
         <div class="footer__details">
@@ -215,16 +255,6 @@
 
     </footer>
 
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    </script>
     <script src="/server.js"></script>
 </body>
 

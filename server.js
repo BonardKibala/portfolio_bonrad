@@ -15,7 +15,7 @@ window.addEventListener('load', () => {
                 portrait__title.appendChild(content_title);  //Toutes cette fonction nous permet au faite d'afficher les contacts dans json
                 portrait__description.appendChild(content_description);
 
-                const typed = new Typed('.name--animated', {
+                const typed = new Typed('.job--animated', {
                     strings: [
                         `${me.work1}`,
                         `${me.work2}`,
