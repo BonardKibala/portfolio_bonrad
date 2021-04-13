@@ -168,6 +168,8 @@ animation-delay: 1.5s;
   &__form{
 width: 40%;
 margin: 0 auto;
+box-shadow: .4em .4em, -.8em 0 2em green;
+background: transparent;
 .buttons{
  @include applyFlexRows($align_center !important);
 }
@@ -213,14 +215,15 @@ margin: 0 auto;
   position: fixed;
   z-index: 1000;
   width: 100vw;
+  @include applyFlexRows(flex-end);
+  padding-right: 4rem;
 }
 .responsiveHeader{
   display: none;
 }
 
 .menu a {
-  float: center;
-  display: block;
+  float: left;
   color: #f2f2f2;
   text-align: $align_center;
   padding: 1.4rem 1.6rem;
@@ -249,6 +252,9 @@ margin: 0 auto;
 
     // media query
     @media screen and (min-width: 280px) and (max-width: 1024px) {
+      .menu {
+        @include applyFlexRows($align_center);
+      }
       .responsiveHeader{
         display: block;
       }

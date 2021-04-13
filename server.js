@@ -1,5 +1,5 @@
 window.addEventListener('load', () => {
-    fetch("http://localhost:3000/developper").then(function (response) {
+    fetch("https://6074590b066e7e0017e79af0.mockapi.io/Portfolio/V1/developper").then(function (response) {
         return response.json();
     })
         .then(function (data) {
@@ -32,34 +32,34 @@ window.addEventListener('load', () => {
         });
 
     // ---------------------------------------------------
-    fetch("http://localhost:3000/works").then(function (response) {
-        return response.json();
-    })
-        .then(function (data) {
-            for (let footerWork of data) {
-                let listSkills = document.querySelector('.ui.list.skills');
-                let itemListFooter = document.createElement('div');
-                itemListFooter.classList.add("item");
-                let contentItemFooter = document.createTextNode(`${footerWork}`);
-                itemListFooter.appendChild(contentItemFooter);
-                listSkills.appendChild(itemListFooter);
-            }
-        });
+    // fetch("http://localhost:3000/works").then(function (response) {
+    //     return response.json();
+    // })
+    //     .then(function (data) {
+    //         for (let footerWork of data) {
+    //             let listSkills = document.querySelector('.ui.list.skills');
+    //             let itemListFooter = document.createElement('div');
+    //             itemListFooter.classList.add("item");
+    //             let contentItemFooter = document.createTextNode(`${footerWork}`);
+    //             itemListFooter.appendChild(contentItemFooter);
+    //             listSkills.appendChild(itemListFooter);
+    //         }
+    //     });
     // ---------------------------------------------------
-    fetch("http://localhost:3000/address").then(function (response) {
-        return response.json();
-    })
-        .then(function (data) {
-            for (let add of data) {
-                let address = document.querySelector('#address');
-                let address_footer = createAddress(add);
-                address.insertAdjacentHTML("beforeend", address_footer);
+    // fetch("http://localhost:3000/address").then(function (response) {
+    //     return response.json();
+    // })
+    //     .then(function (data) {
+    //         for (let add of data) {
+    //             let address = document.querySelector('#address');
+    //             let address_footer = createAddress(add);
+    //             address.insertAdjacentHTML("beforeend", address_footer);
 
-            }
-        });
+    //         }
+    //     });
 
     //-----------------------------------------------
-    fetch("http://localhost:3000/hardSkills").then(function (response) {
+    fetch("https://6074590b066e7e0017e79af0.mockapi.io/Portfolio/V1/hardSkills").then(function (response) {
         return response.json();
     })
         .then(function (data) {
@@ -69,7 +69,7 @@ window.addEventListener('load', () => {
             })
         });
     // -----------------------------------
-    fetch("http://localhost:3000/softSkills").then(function (response) {
+    fetch("https://6074590b066e7e0017e79af0.mockapi.io/Portfolio/V1/softSkills").then(function (response) {
         return response.json();
     })
         .then(function (data) {
@@ -85,7 +85,7 @@ window.addEventListener('load', () => {
         });
 
     // ------------------------------
-    fetch("http://localhost:3000/projects").then(function (response) {
+    fetch("https://6074590b066e7e0017e79af0.mockapi.io/Portfolio/V1/projects").then(function (response) {
         return response.json();
     })
         .then(function (data) {
@@ -117,12 +117,12 @@ window.addEventListener('load', () => {
 
 });
 
-function createAddress(add) {
-    return `${add.address1}<br>
-${add.address2}<i class="cd flag" id="flag-rdc"></i><br>
-<i class="ui whatsapp green icon" id="Telephone"></i> ${add.whatsapp} <br>
-<i class="ui facebook blue icon" id="facebook"></i>${add.facebook}`
-}
+// function createAddress(add) {
+//     return `${add.address1}<br>
+// ${add.address2}<i class="cd flag" id="flag-rdc"></i><br>
+// <i class="ui whatsapp green icon" id="Telephone"></i> ${add.whatsapp} <br>
+// <i class="ui facebook blue icon" id="facebook"></i>${add.facebook}`
+// }
 let i = 0;
 function createHardSkills(hardskill) {
     let hardskillIcon = document.querySelectorAll('.hardSkills__icon');

@@ -149,6 +149,8 @@
 .writeMe__form {
   width: 40%;
   margin: 0 auto;
+  box-shadow: 0.4em 0.4em, -0.8em 0 2em green;
+  background: transparent;
 }
 .writeMe__form .buttons {
   display: flex;
@@ -206,6 +208,11 @@
   position: fixed;
   z-index: 1000;
   width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 4rem;
 }
 
 .responsiveHeader {
@@ -213,8 +220,7 @@
 }
 
 .menu a {
-  float: center;
-  display: block;
+  float: left;
   color: #f2f2f2;
   text-align: center;
   padding: 1.4rem 1.6rem;
@@ -480,6 +486,13 @@
 }
 
 @media screen and (min-width: 280px) and (max-width: 1024px) {
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
   .responsiveHeader {
     display: block;
   }
